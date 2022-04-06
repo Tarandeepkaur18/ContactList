@@ -49,6 +49,8 @@ class MainActivity2 : AppCompatActivity() {
         binding.rv.layoutManager = linearLayoutManager
         binding.rv.adapter = adapter
         binding.btnperm.setOnClickListener {
+            //throw RuntimeException("Test Crash") // Force a crash
+
             when {
                 ContextCompat.checkSelfPermission(
                     this,
